@@ -26,8 +26,6 @@ module.exports = function(main){
             
             database.query('Select * from login where email =? and password = ? ',[req.body.email,req.body.password],(err,rows)=>{
              
-              console.log(err);
-              console.log(req.body.password);
               if(rows.length > 0){
                    req.session.myname =rows[0].Name;
                    req.session.userid=req.body.email;
