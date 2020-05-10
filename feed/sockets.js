@@ -27,12 +27,12 @@ io.on('connection',async (socket)=>
     socket.on("sending message",(message)=>{
              if(message==""){}
                else {
-                   message = html(message);
+                   message_s = html(message);
                    queries.userfeed(message,socket.request.session.userid,socket);
 
             
-        socket.to(socket.request.session.userid).emit('new message',{message:message,name:socket.request.session.myname});
-        socket.emit('new message',{message:message,name:socket.request.session.myname})
+        socket.to(socket.request.session.userid).emit('new message',{message:message_s,name:socket.request.session.myname});
+        socket.emit('new message',{message:message_s,name:socket.request.session.myname})
                 }})
 
     socket.on("new connection",async ()=>{
