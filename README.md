@@ -1,6 +1,6 @@
 # Socket.io-feed
 
-Socket.io based Newsfeed with real time Contents updates .It is based on Relationships,which means Application emits the contents to Sender and Sender's Connections, also stored the contents to Database
+Socket.io based Newsfeed with real time Contents updates .It is based on Relationships,which means On posting a content Application Update the content on Sender's feed & to Sender's Connections, also stored the contents to Database
 .
 
 ### Includes
