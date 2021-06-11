@@ -1,6 +1,6 @@
 # Socket.io-feed
 
-Socket.io based Newsfeed with real time Contents updates .It is based on Relationships,which means On posting a content Application Update the content on Sender's feed & to Sender's Connections, also stored the contents to Database
+Socket.io based Newsfeed with real time updates .It is based on Relationships,which means On posting a content, Application Update the content in Sender feed & to Sender Connections, also stored the contents to Database
 .
 
 ### Includes
@@ -22,7 +22,7 @@ User-->Users
 
 **Features**
 * Connect New user to all the online friends 
-* Connect online users to new Users
+* Connect online Users to new Users(if they'r related)
 * User get all the recent posts of friends through database
 * Real time feed updates on new contents
 
@@ -56,7 +56,7 @@ Installation
 ```
  Install [node](http://nodejs.org/#download)
  git clone https://github.com/Aakashk14/Socket.io-feed.git 
- cd socket-io-feed.git
+ cd socket-io-feed
  npm install
   
  Import Demo Database 
